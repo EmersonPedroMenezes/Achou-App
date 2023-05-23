@@ -1,6 +1,6 @@
-import { Text, TextInput,   TouchableOpacity, View } from 'react-native'
-import styles from '../CreateProduct/style';
 import { useState } from 'react';
+import { Text, TextInput,   TouchableOpacity, View } from 'react-native';
+import styles from './style'; 
 import firebase from '../../config/firebase';
 import {getFirestore} from 'firebase/firestore';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -27,7 +27,7 @@ export default function CreateProduct({navigation}){
             data_registro: serverTimestamp()
         });
 
-        NavigationPreloadManager.navigate('Tabs')
+        navigation.navigate('Tabs')
 
     }
 
