@@ -9,6 +9,26 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
+    produto:{
+        backgroundColor: "#FFF",
+        padding: 10,
+        marginBottom: 20,
+        borderRadius: 10,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+
+    descricao: {
+        fontSize: 20,
+        fontWeight: 'bold'
+    },
+
+    valor:{
+        fontSize: 18,
+        color: "#F60"
+    },
+
     btnCreate:{
         backgroundColor: '#F60',
         width: 60,
@@ -27,7 +47,7 @@ const styles = StyleSheet.create({
         color: '#FFF',
     },
 
-
+    
 
 
 });
